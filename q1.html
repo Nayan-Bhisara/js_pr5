@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+
+        //1. find negetive elements in array.
+        var n = parseInt(prompt("Enter array size :- "));
+        const arr1 = [n];
+        for(var i=0; i<n; i++){
+            arr1[i] = parseInt(prompt("Enter array elements :- "));
+        }
+        let arrrr = [];
+        for(var i=0; i<n; i++){
+            if(arr1[i]<0){
+                arrrr.push(arr1[i]);
+            }
+        }
+        console.log(arrrr);
+
+        // for(var i=0; i<n; i++){
+        //     if(arr1[i]<0){
+        //         console.log(arr1[i]);
+        //     }
+        // }
+        
+        // const arr2 = arr1.filter((a) => {
+        //     if(a<0){
+        //         return a;
+        //     }
+        // })
+        // console.log(arr2);
+
+    </script>
+    
+</body>
+</html>

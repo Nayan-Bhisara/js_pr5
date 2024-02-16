@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+
+        var n = parseInt(prompt("Enter array size :- "));
+        const arr1 = [n];
+        for(var i=0; i<n; i++){
+            arr1[i] = parseInt(prompt("Enter array elements :- "));
+        }
+        let maxnum = arr1[0];
+        for(var i=0; i<n; i++){
+            if(arr1[i]>maxnum){
+                maxnum = arr1[i];
+            }
+        }
+        console.log(maxnum);
+
+    </script>
+    
+</body>
+</html>

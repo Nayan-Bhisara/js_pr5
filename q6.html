@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+
+        var arr1 = [];
+        var n = parseInt(prompt("Enter array size :- "));
+        for (var i = 0; i < n; i++) {
+            arr1[i] = parseInt(prompt("Enter array value :- "));
+        }
+    
+        var insert = parseInt(prompt("Enter delet index in lassthen array size :- "));
+    
+        for (var i = insert; i < arr1.length; i++) {
+            arr1[i] = arr1[i + 1];
+        }
+        arr1.length = arr1.length-1;
+        console.log(arr1);
+    
+    </script>
+
+</body>
+</html>
